@@ -1,0 +1,39 @@
+/* ========= svg icons in clients ========= */
+
+.clients-list {
+    @extend %aling;
+    column-gap: 30px;
+}
+
+.clients-list-link {
+    @extend %aling;
+
+    transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    width: 170px;
+    height: 92px;
+
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+
+    &:hover,
+    &:focus {
+        border-color: var(--accent-color);
+
+    }
+}
+
+.clients-list-icon {
+    width: 106px;
+    height: 60px;
+    fill: #AFB1B8;
+
+    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+
+    .clients-list-link:hover &,
+    .clients-list-link:focus & {
+        fill: var(--accent-color);
+
+    }
+}
