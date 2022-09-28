@@ -4,11 +4,24 @@
 
 .features-list {
     display: flex;
+    justify-content: center;
     column-gap: 30px;
 }
 
-.features-list-width {
+.features-list-li {
     width: 270px;
+
+    @media screen and (max-width: $tablet) {
+        &:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+
+    @media screen and (max-width: $max-desktop) {
+        &:nth-child(-n+2) {
+            margin-bottom: 30px;
+        }
+    }
 }
 
 .features {

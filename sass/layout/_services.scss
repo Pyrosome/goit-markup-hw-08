@@ -1,3 +1,18 @@
+.section-services {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    padding-top: 0;
+
+    @media screen and (min-width: $desktop) {
+    visibility: visible;
+    width: auto;
+    height: auto;
+    padding-top: 94px;
+    }
+}
+
+
 .relative-box {
     position: relative;
 }

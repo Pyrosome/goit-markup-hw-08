@@ -28,14 +28,55 @@
 
 /* ========= nav ========= */
 
-.nav-list,
-.contact-list {
+.nav-list {
     display: flex;
     column-gap: 50px;
+
+    @media screen and (max-width: $tablet) {
+        visibility: hidden;
+        appearance: none;
+        width: 0;
+        height: 0;
+    }
+}
+
+.contact-list {
+
+    @media screen and (min-width: $desktop) {
+        display: flex;
+        column-gap: 50px;
+    }
+
+    @media screen and (max-width: $tablet) {
+        visibility: hidden;
+        appearance: none;
+        width: 0;
+        height: 0;
+    }
 }
 
 .contact-list {
     margin-left: auto;
+}
+
+.contact-list-link--mail {
+    @media screen and (max-width: $desktop) {
+        padding-top: 21px;
+        padding-bottom: 0;
+    }
+}
+
+.contact-list-link--phone {
+    @media screen and (max-width: $desktop) {
+        padding-top: 10px;
+    }
+}
+
+.contact-list-link{
+    @media screen and (min-width: $desktop) {
+        padding-bottom: 32px;
+        padding-top: 32px;
+    }
 }
 
 .nav-link,
@@ -47,8 +88,6 @@
     letter-spacing: 0.02em;
 
     display: inline-block;
-    padding-bottom: 32px;
-    padding-top: 32px;
 
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -56,6 +95,9 @@
 .nav-link {
     color: #212121;
     position: relative;
+
+    padding-bottom: 32px;
+    padding-top: 32px;
 
     &.nav-link:hover,
     &.nav-link:focus {
