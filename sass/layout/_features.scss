@@ -15,6 +15,7 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
+        width: auto;
     }
 
     @media screen and (max-width: $max-desktop) {

@@ -252,10 +252,23 @@ address {
   background-color: #2F303A;
   font-style: normal;
 }
+@media screen and (max-width: 1199px) {
+  footer,
+address {
+    text-align: center;
+  }
+}
 
 .footer-flex {
   display: flex;
+  flex-wrap: wrap;
   align-items: baseline;
+}
+@media screen and (max-width: 768px) {
+  .footer-flex {
+    flex-direction: column;
+    row-gap: 60px;
+  }
 }
 
 .address-mail-tel,
@@ -269,6 +282,13 @@ address {
 }
 
 /* ========= footer logo ========= */
+@media screen and (max-width: 1199px) {
+  .address-box {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .footerlogo {
   display: inline-block;
   margin-bottom: 20px;
@@ -353,6 +373,7 @@ address {
 /* ======= subscription button ======= */
 .subscription-box {
   margin-left: auto;
+  margin-right: auto;
 }
 
 .subscription-text {
@@ -370,6 +391,12 @@ address {
 .subscription-form {
   display: flex;
   column-gap: 12px;
+}
+@media screen and (max-width: 1199px) {
+  .subscription-form {
+    flex-direction: column;
+    row-gap: 20px;
+  }
 }
 
 .subscription-input {
@@ -393,6 +420,11 @@ address {
 .subscription-input:focus {
   border-color: var(--accent-color);
 }
+@media screen and (max-width: 768px) {
+  .subscription-input {
+    width: 450px;
+  }
+}
 
 .subscription-button {
   column-gap: 10px;
@@ -413,6 +445,12 @@ address {
 }
 .subscription-button:hover {
   background-color: #188CE8;
+}
+@media screen and (max-width: 1199px) {
+  .subscription-button {
+    margin-left: auto;
+    margin-right: auto;
+  }
 }
 
 .subscription-icon {
@@ -438,7 +476,7 @@ address {
 }
 
 .order-text {
-  width: 696px;
+  width: 100%;
   margin-bottom: 30px;
   margin-left: auto;
   margin-right: auto;
@@ -448,6 +486,17 @@ address {
   line-height: 1.37;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .order-text {
+    font-size: 26px;
+    line-height: 1.61;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .order-text {
+    width: 696px;
+  }
 }
 
 .order-button {
@@ -483,6 +532,9 @@ address {
   width: 270px;
 }
 @media screen and (max-width: 768px) {
+  .features-list-li {
+    width: auto;
+  }
   .features-list-li:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -602,7 +654,6 @@ address {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  /* identical to box height */
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -618,6 +669,12 @@ address {
   text-align: center;
   letter-spacing: 0.03em;
   color: var(--background-color);
+}
+
+@media screen and (max-width: 768px) {
+  .img-width {
+    width: 100%;
+  }
 }
 
 /* ========= svg icons in team ========= */
@@ -732,6 +789,13 @@ address {
   gap: 30px;
 }
 
+@media screen and (max-width: 1199px) {
+  .portfolio-list-li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
 .portfolio-list-link {
   display: block;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -741,7 +805,7 @@ address {
 }
 @media screen and (max-width: 1199px) {
   .portfolio-list-link {
-    width: 354px;
+    width: auto;
   }
 }
 

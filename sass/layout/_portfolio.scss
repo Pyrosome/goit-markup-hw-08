@@ -3,6 +3,13 @@
     gap: 30px;
 }
 
+.portfolio-list-li {
+    @media screen and (max-width: $max-desktop) {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
 .portfolio-list-link {
     display: block;
 
@@ -16,7 +23,7 @@
     }
 
     @media screen and (max-width: $max-desktop) {
-        width: 354px;     
+        width: auto;     
     }
 }
 

@@ -30,7 +30,6 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
-    /* identical to box height */
     text-align: center;
     letter-spacing: 0.03em;
 
@@ -49,6 +48,12 @@
     letter-spacing: 0.03em;
 
     color: var(--background-color);
+}
+
+.img-width {
+   @media screen and (max-width: $tablet) {
+    width: 100%;
+   }
 }
 
 /* ========= svg icons in team ========= */
