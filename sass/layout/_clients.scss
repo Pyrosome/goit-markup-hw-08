@@ -7,6 +7,7 @@
 
 .clients-list-item {
 
+    @extend %aling; 
     margin-bottom: 0;
 
     @media screen and (max-width: $max-desktop) {
@@ -14,12 +15,16 @@
             margin-bottom: 30px;
         }
     }
-
-    @media screen and (max-width: $tablet) {
+    
+    @media screen and (max-width: $max-tablet) {
         &:nth-child(-n + 4) {
             margin-bottom: 30px;
         }
+
+        flex-basis: calc(100%/3);
     }
+
+    
 }
 
 .clients-list-link {
@@ -36,7 +41,10 @@
     &:hover,
     &:focus {
         border-color: var(--accent-color);
+    }
 
+    @media screen and (max-width: 400px) {
+        width: 100%;
     }
 }
 
@@ -52,5 +60,9 @@
     .clients-list-link:focus & {
         fill: var(--accent-color);
 
+    }
+    @media screen and (max-width: 400px) {
+        width: 70%;
+        height: 50%;
     }
 }

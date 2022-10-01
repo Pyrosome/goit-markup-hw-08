@@ -21,6 +21,7 @@
     position: absolute;
     @extend %aling;
 
+    font-family: var(--primary-font);
     width: 370px;
     height: 70px;
     bottom: 0;
