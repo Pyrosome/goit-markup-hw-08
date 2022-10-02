@@ -15,9 +15,12 @@
     }
 }
 
-.icon-switch {
+.mobile-menu__switch-icon {
     width: 24px;
     height: 16px;
+}
+
+.icon-switch {
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
     .menu-svg:hover & {
@@ -27,6 +30,11 @@
 
 /* mobile menu block */
 
+.mobile-menu__container {
+    position: relative;
+    padding: 48px 0 48px 40px;
+}
+
 .mobile-menu {
     position: fixed;
     top: 0;
@@ -35,18 +43,96 @@
     height: 100%;
     z-index: 100;
     background: white;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+        transform: translateY(-101%);
+        transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+
+}
+
+.mobile-menu.is-open {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: initial;
+
+        transform: translateY(0%);
 }
 
 .mobile-menu__close-btn {
     position: absolute;
+    border: none;
+    background-color: transparent;
+
+    right: 30px;
+    top: 20px;
+    padding: 0;
+
+    width: 40px;
+    height: 40px;
+}
+
+.mobile-menu__close-icon {
+    width: 18.67px;
+    height: 18.67px;
 }
 
 .icon-cross {
-    width: 18.67px;
-    display: none;
-
-    transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    .menu-svg:hover & {
+    opacity: 0;
+    visibility: hidden;
+    display: block;
+    transition: fill 100ms cubic-bezier(0.4, 0, 0.2, 1);
+    
+    .mobile-menu__close-btn:hover & {
         fill: var(--accent-color);
     }
+
+    .mobile-menu.mobile-menu.is-open & {
+    opacity: 1;
+    visibility: visible;
+    }
+}
+
+.mobile-menu__nav-list,
+.mobile-menu__contact-list,
+.mobile-menu__socials-list {
+    font-family: var(--primary-font);
+    font-style: normal;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+.mobile-menu__nav-list {
+    font-size: 40px;
+    line-height: 1.18;
+    color: #212121;
+}
+
+.mobile-menu__contact-list {
+    font-size: 34px;
+    line-height: 1.18;
+    margin-top: 300px;
+}
+.mobile-contact-item--phone{
+    margin-top: 32px;
+}
+
+.mobile-menu__socials-list{
+    font-size: 18px;
+    line-height: 1.22;
+    color: #2196F3;
+
+    display: flex;
+    margin-top: 90px;
+
+    @media screen and (max-width: $max-mobile) {
+        flex-wrap: wrap;
+    }
+}
+
+.mobile-menu__socials-item:not(:last-child) {
+    padding-right: 10px;
+    margin-right: 10px;
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
 }

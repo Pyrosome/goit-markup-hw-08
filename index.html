@@ -56,37 +56,37 @@
                 </li>
             </ul>            
             
-            <button class="mobile-menu__switch" aria-expanded="false">
+            <button class="mobile-menu__switch js-open-menu" aria-expanded="false">
                 <svg class="mobile-menu__switch-icon" aria-label="mobile menu switch" width="40" height="40" >
                     <use class="icon-switch" href="./images/sprite.svg#icon-menu"></use>
                 </svg>
             </button>
 
-            <div class="mobile-menu">
-                <div class="container">
-                    <div class="mobile-menu__close-btn">
-                        <svg class="mobile-menu__close-btn">
+            <div class="mobile-menu js-menu-container">
+                <div class="container mobile-menu__container">
+                    <button class="mobile-menu__close-btn js-close-menu">
+                        <svg class="mobile-menu__close-icon">
                             <use class="icon-cross" href="./images/sprite.svg#icon-cross"></use>
                         </svg>
-                    </div>
+                    </button>
                     <ul class="mobile-menu__nav-list list">
                         <li><a href="./index.html" class="mobile-menu__nav-item link">Студія</a></li>
                         <li><a href="./portfolio.html" class="mobile-menu__nav-item link">Портфоліо</a></li>
                         <li><a href="#footer" class="mobile-menu__nav-item link">Контакти</a></li>
                     </ul>
                     <ul class="mobile-menu__contact-list list">
-                        <li><a href="mailto:info@devstudio.com" class="mobile-menu__contact-item link">
+                        <li><a href="mailto:info@devstudio.com" class="mobile-menu__contact-item mobile-contact-item--mail link">
                                 info@devstudio.com</a>
                         </li>
-                        <li><a href="tel:+380961111111" class="mobile-menu__nav-item link">
+                        <li><a href="tel:+380961111111" class="mobile-contact-item mobile-contact-item--phone link">
                                 +380961111111</a>
                         </li>
                     </ul>
                     <ul class="mobile-menu__socials-list list">
-                        <li class="mobile-mene__socials-item">Instagram</li>
-                        <li class="mobile-mene__socials-item">Twitter</li>
-                        <li class="mobile-mene__socials-item">Facebook</li>
-                        <li class="mobile-mene__socials-item">LinkedIn</li>
+                        <li class="mobile-menu__socials-item"><a class="link" href="">Instagram</a></li>
+                        <li class="mobile-menu__socials-item"><a class="link" href="">Twitter</a></li>
+                        <li class="mobile-menu__socials-item"><a class="link" href="">Facebook</a></li>
+                        <li class="mobile-menu__socials-item"><a class="link" href="">LinkedIn</a></li>
                     </ul>
                 </div>
             </div>

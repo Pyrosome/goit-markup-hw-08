@@ -100,7 +100,7 @@
 .current-page {
     color: var(--accent-color);
 
-    &:after {
+    &::after {
         content: ' ';
         position: absolute;
         display: block;
