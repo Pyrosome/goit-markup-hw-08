@@ -114,6 +114,10 @@
     color: #212121;
 
     margin-bottom: 12px;
+
+    @media screen and (max-width: $max-mobile) {
+        font-size: 14px;
+    }
 }
 
 .modal-form {
@@ -168,7 +172,7 @@
         height: 100px;
     }
 
-    @media screen and (max-width: 400px) {
+    @media screen and (max-width: 300px) {
         height: 75px;
     }
 }
@@ -247,6 +251,12 @@ textarea {
         border: none;
         outline: none;
     }
+
+    @media screen and (max-width: $max-mobile) {
+        width: 12px;
+        height: 12px;
+        padding-right: 10px;
+    }
 }
 
 .modal-button {
@@ -274,7 +284,7 @@ textarea {
     }
 
     @media screen and (max-width: 400px) {
-        width: 100px;
+        width: 70%;
         font-size: 12px;
         line-height: 1.16;
     }

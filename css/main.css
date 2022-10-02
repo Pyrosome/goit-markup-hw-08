@@ -1264,6 +1264,11 @@ address {
   color: #212121;
   margin-bottom: 12px;
 }
+@media screen and (max-width: 479px) {
+  .modal-text {
+    font-size: 14px;
+  }
+}
 
 .modal-form {
   display: flex;
@@ -1316,7 +1321,7 @@ address {
     height: 100px;
   }
 }
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 300px) {
   .modal-textarea {
     height: 75px;
   }
@@ -1388,6 +1393,13 @@ textarea:focus {
   border: none;
   outline: none;
 }
+@media screen and (max-width: 479px) {
+  .icon-checkbox {
+    width: 12px;
+    height: 12px;
+    padding-right: 10px;
+  }
+}
 
 .modal-button {
   font-family: var(--primary-font);
@@ -1411,7 +1423,7 @@ textarea:focus {
 }
 @media screen and (max-width: 400px) {
   .modal-button {
-    width: 100px;
+    width: 70%;
     font-size: 12px;
     line-height: 1.16;
   }
