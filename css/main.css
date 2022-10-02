@@ -122,12 +122,9 @@ textarea {
 .mobile-menu__switch-icon {
   width: 24px;
   height: 16px;
-}
-
-.icon-switch {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.menu-svg:hover .icon-switch {
+.mobile-menu__switch:hover .mobile-menu__switch-icon {
   fill: var(--accent-color);
 }
 
@@ -198,29 +195,45 @@ textarea {
   letter-spacing: 0.02em;
 }
 
+.mobile-menu__nav-list {
+  margin-bottom: 55%;
+}
+
+.mobile-menu__nav-list li:not(:last-child) {
+  margin-bottom: 32px;
+}
+
 .mobile-menu__nav-item {
   font-size: 40px;
   line-height: 1.18;
   color: #212121;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-menu__nav-item:hover {
+  color: var(--accent-color);
 }
 
 .mobile-menu__contact-list {
-  margin-top: 300px;
+  margin-bottom: 64px;
 }
 
 .mobile-menu__contact-item {
   font-size: 34px;
   line-height: 1.18;
-  margin-top: 300px;
 }
 
 .mobile-contact-item--phone {
-  margin-top: 32px;
+  display: block;
+  margin-bottom: 32px;
+  color: var(--accent-color);
+}
+
+.mobile-contact-item--mail {
+  color: #757575;
 }
 
 .mobile-menu__socials-list {
   display: flex;
-  margin-top: 90px;
 }
 @media screen and (max-width: 479px) {
   .mobile-menu__socials-list {
@@ -228,13 +241,16 @@ textarea {
   }
 }
 
-.mobile-menu__socials-item:not(:last-child) {
-  font-size: 18px;
-  line-height: 1.22;
-  color: #2196F3;
+.mobile-menu__socials-list li:not(:last-child) {
   padding-right: 10px;
   margin-right: 10px;
   border-right: 1px solid rgba(33, 33, 33, 0.2);
+}
+
+.mobile-menu__socials-item {
+  font-size: 18px;
+  line-height: 1.22;
+  color: #2196F3;
 }
 
 .page-header-container,
@@ -912,6 +928,7 @@ address {
 @media screen and (max-width: 400px) {
   .clients-list-link {
     width: 100%;
+    height: 60px;
   }
 }
 
