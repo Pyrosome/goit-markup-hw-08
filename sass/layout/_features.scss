@@ -15,13 +15,14 @@
         &:not(:last-child) {
             margin-bottom: 30px;
         }
-        width: auto;
+        width: 100%;
     }
 
     @media screen and (max-width: $max-desktop) {
         &:nth-child(-n+2) {
             margin-bottom: 30px;
         }
+        width: 354px;
     }
 }
 
@@ -37,6 +38,10 @@
     text-transform: uppercase;
 
     color: #212121;
+
+    @media screen and (max-width: $max-tablet) {
+        text-align: center;
+    }
 }
 
 .features-text {
