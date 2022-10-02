@@ -644,6 +644,36 @@ address {
   background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/background.jpg");
   background-size: cover;
 }
+@media screen and (max-width: 767px) {
+  .section-order {
+    background-image: url("../images/mobile/background-mob.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (max-width: 767px), screen and (min-resolution: 192dpi) and (max-width: 767px), screen and (min-resolution: 2dppx) and (max-width: 767px) {
+  .section-order {
+    background-image: url("../images/mobile/background@2x-mob.jpg");
+  }
+}
+@media screen and (min-width: 768px) {
+  .section-order {
+    background-image: url("../images/tablet/background-tab.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .section-order {
+    background-image: url("../images/tablet/background-tab@2x.jpg");
+  }
+}
+@media screen and (min-width: 1200px) {
+  .section-order {
+    background-image: url("../images/desktop/background-desk.jpg");
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .section-order {
+    background-image: url("../images/desktop/background-desk@2x.jpg");
+  }
+}
 
 .order-text {
   width: 100%;
