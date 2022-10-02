@@ -27,6 +27,10 @@
     bottom: 0;
     background-color: rgba(47, 48, 58, 0.8);
     color: #FFFFFF;
+
+    @media screen and (max-width: $mobile) {
+        width:0;       
+    }
 }
 
 .photo-overlay p {
