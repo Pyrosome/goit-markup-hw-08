@@ -4,7 +4,6 @@
     background-size: cover;
     background-color: #2F303A;
     max-width: 1600px;
-    height: 600px;
     margin: 0 auto;
 
     padding-top: 118px;
@@ -22,34 +21,41 @@
     url('../images/background.jpg');
 
     @media screen and (max-width: $max-tablet) {
-        background-image: url('../images/mobile/background-mob.jpg');
+        
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/mobile/background-mob.jpg');
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (max-width: $max-tablet),
     screen and (min-resolution: 192dpi) and (max-width: $max-tablet),
     screen and (min-resolution: 2dppx) and (max-width: $max-tablet) {
 
-        background-image: url('../images/mobile/background@2x-mob.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/mobile/background@2x-mob.jpg');
     }
 
     @media screen and (min-width: $tablet) {
-        background-image: url('../images/tablet/background-tab.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/tablet/background-tab.jpg');
     }
 
     @media screen and (min-device-pixel-ratio: 2) and (min-width: $tablet),
     screen and (min-resolution: 192dpi) and (min-width: $tablet),
     screen and (min-resolution: 2dppx) and (min-width: $tablet) {
-        background-image: url('../images/tablet/background-tab@2x.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/tablet/background-tab@2x.jpg');
     }  
 
     @media screen and (min-width: $desktop) {
-        background-image: url('../images/desktop/background-desk.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/desktop/background-desk.jpg');
     }
     
     @media screen and (min-device-pixel-ratio: 2) and (min-width: $desktop),
     screen and (min-resolution: 192dpi) and (min-width: $desktop),
     screen and (min-resolution: 2dppx) and (min-width: $desktop) {
-        background-image: url('../images/desktop/background-desk@2x.jpg');
+        background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+        url('../images/desktop/background-desk@2x.jpg');
     }
 
 }
