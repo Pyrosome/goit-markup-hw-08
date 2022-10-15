@@ -1,5 +1,3 @@
-# goit-markup-hw-08
+# goithw promotional site pactice
 
-homework 8
-
-https://pyrosome.github.io/goit-markup-hw-08/
+https://pyrosome.github.io/goithw-promotional-site-pactice/
